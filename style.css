@@ -1,0 +1,37 @@
+body{
+    background-color: #efedd6;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+h1{
+    margin: 10px;
+}
+
+.box{
+    background-color: steelblue;
+    display: flex;
+    color: rgb(255, 255, 255);
+    height: 200px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 3px rgba(70, 131, 180, 0.571);
+    transition: transform 1s ease;
+}
+
+.box:nth-of-type(even){
+    transform: translateX(-400%);
+}
+
+.box{
+    transform: translateX(400%);
+}
+
+.box.show{
+    transform: translateX(0);
+}
